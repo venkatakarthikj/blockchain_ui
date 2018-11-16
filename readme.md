@@ -8,5 +8,5 @@
 
 
 TO START APP
- #npm install
- #npm start
+ # npm install
+ # npm start
