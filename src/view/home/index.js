@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import {listInfo } from '../../service/search/action';
+import {listInfo  } from '../../service/search/action';
 import Schedule from '../../component/schedule';
 import GridTable from '../../component/gridTable';
 
@@ -28,6 +28,7 @@ class Home extends Component {
 	
 	componentDidMount(){
 		this.props.listInfo();
+	
 	}
 
 	handleEditTable =(edit) =>{
@@ -60,10 +61,13 @@ class Home extends Component {
   }
 }
 const mapStateToProps = (state) => ({
-  userList: state.searchReducer.userList,
+	userList: state.searchReducer.userList,
+
 }) 	
 const mapDispatchToProps = dispatch => ({
 	listInfo:() => dispatch(listInfo())
+
+
 })
 
 export default connect(mapStateToProps,mapDispatchToProps)(Home);

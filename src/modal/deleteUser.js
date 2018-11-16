@@ -30,26 +30,23 @@ class CreateUser extends Component {
   
     render() {
         return (
+            <div className="userinfo">
             <div id="myModal" className="modal fade in" role="dialog" style={{ display: 'block' }}>
                 <div className="modal-dialog" >
-                    <div className="modal-content popupCont" style={{height:'100px'}}>
+                    <div className="modal-content popupCont">
                         <div className="modal-body " >
                                 
-                            <div className="col-md-12 ">
-                            <h4>Delete UserInformation </h4>
-                            <p> Would you like to Delete User Information....</p>
-                           
-                            <div className="col-md-12 margintpDn">
-                                <button type="button" className="btn btn-default" onClick={this.props.onHide} >cancel</button>
-                                <button type="submit" className="btn btn-default pull-right" onClick={this.handleSubmit} >Delete</button>
-                            </div>
-                            </div>
-                            
+                            <h4>Delete Contract </h4>
+                            <p> Would you like to Delete Contract Information....</p>
+
                         </div>
-
+                        <div className="col-md-12 margintpDn">
+                            <button type="button" className="btn btn-default cancelbtn" onClick={this.props.onHide} >cancel</button>
+                            <button type="submit" className="btn btn-default deletebtn pull-right" onClick={this.handleSubmit} >Delete</button>
+                        </div>
                     </div>
-
                 </div>
+            </div>
             </div>
         );
     }

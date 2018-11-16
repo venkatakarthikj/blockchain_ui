@@ -3,6 +3,7 @@ import actionTypes from './actionType';
 const initialState = {
   userList: [],
   updateList:[],
+  walletList:[]
   
 }
 
@@ -18,8 +19,8 @@ const reducer = (state=initialState, action) => {
       return({
         ...state,
         updateList: action.data
-      })
-    
+      });
+          
     default: 
       return state;
   }

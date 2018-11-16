@@ -4,8 +4,6 @@ import CreateUser from '../modal/createUser';
 import DeleteUser from '../modal/deleteUser';
 import * as propTypes from 'prop-types';
 
-
-
 class GridTable extends Component {
     constructor(props) {
         super(props)

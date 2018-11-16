@@ -40,3 +40,32 @@ body {
 .table-top{
   margin-top: 10px;
 }
+.userinfo .modal{background: rgba(0,0,0,0.4);}
+.userinfo .modal-body h4{margin: 0; font-weight: 600; font-size: 20px; padding-bottom: 6px;}
+.userinfo .modal-body p{    margin: 0;
+  font-weight: 300;
+  font-size: 14px;
+  color: #727272;}
+.userinfo .modal-dialog{width: 450px;padding: 20px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;}
+.userinfo .modal-content{min-height:auto; overflow: hidden;}
+.userinfo .margintpDn{padding-bottom: 20px;}
+.margintpDn .deletebtn, .margintpDn .deletebtn:hover{
+  color: #fff;
+  background-color: #dd6161;
+  outline: none;
+}
+.margintpDn .cancelbtn{
+  background: #f1f1f1;
+    color: #000000;
+    outline: none;
+}
+
+
+.modal{
+  background: rgba(0,0,0,0.4);
+}

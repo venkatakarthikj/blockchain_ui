@@ -34,12 +34,11 @@ class CreateUser extends Component {
                 name:this.state.firstName,
                 surname:this.state.lastName,
             },
-            
+       
             amountInUsd:this.state.amount ,
             currency:this.state.currency,
             date:this.state.date|| ""
         }
-       
         this.props.addUser(data);
         this.props.onHide();
     }
@@ -50,13 +49,11 @@ render() {
         return (
             <div id="myModal" className="modal fade in" role="dialog" style={{ display: 'block' }}>
                 <div className="modal-dialog">
-
-                    {/* <!-- Modal content--> */}
                     <div className="modal-content popupCont">
                         <div className="modal-body">
                                
                             <div className="col-md-12">
-                            <h4>Create UserInformation </h4>
+                            <h4>Create Contract </h4>
                             <form >
                                 <div className="form-group">
                                     <label htmlFor="name">First name</label>
@@ -81,14 +78,13 @@ render() {
                                 </div>
                             </form>
                             
-                            <div className="col-md-12 margintpDn">
-                                <button type="button" className="btn btn-default" onClick={this.props.onHide} >cancel</button>
-                                <button type="submit" className="btn btn-default pull-right" onClick={this.handleSubmit} >save</button>
+                            <div className=" margintpDn">
+                                <button type="button" className="btn btn-default cancelbtn" onClick={this.props.onHide} >cancel</button>
+                                <button type="submit" className="btn btn-default deletebtn pull-right" onClick={this.handleSubmit} >save</button>
                             </div>
                             </div>
-                            
+                          
                         </div>
-
                     </div>
 
                 </div>

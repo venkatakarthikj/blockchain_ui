@@ -59,7 +59,7 @@ render() {
                         <div className="modal-body">
                                                    
                             <div className="col-md-12">
-                            <h4>Edit UserInformation </h4>
+                            <h4>Edit Contract </h4>
                             <form >
                                 <div className="form-group">
                                     <label htmlFor="name">First name</label>
@@ -84,16 +84,13 @@ render() {
                                 </div>
                             </form>
                             
-                            <div className="col-md-12 margintpDn">
-                                <button type="button" className="btn btn-default" onClick={this.props.onHide} >cancel</button>
-                                <button type="submit" className="btn btn-default pull-right" onClick={this.handleSubmit} >save</button>
+                            <div className="margintpDn">
+                                <button type="button" className="btn btn-default cancelbtn" onClick={this.props.onHide} >cancel</button>
+                                <button type="submit" className="btn btn-default deletebtn pull-right" onClick={this.handleSubmit} >save</button>
                             </div>
                             </div>
-                            
                         </div>
-
                     </div>
-
                 </div>
             </div>
         );

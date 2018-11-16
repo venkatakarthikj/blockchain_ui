@@ -1,4 +1,4 @@
-const API = 'http://192.168.2.85:3000/api'
+const API = 'http://localhost:7000/api'
 
 const configUrl = {
   GET_CONTRACT: `${API}/getContract`,
@@ -6,5 +6,6 @@ const configUrl = {
   ADD_CONTRACT: `${API}/addContract`,
   DELETE_CONTRACT: `${API}/deleteContract`,
   SCHEDULE_MAIL: `${API}/mailScheduled`,
+  WALLET_API: `http://rest.coinapi.io/v1/assets`
 };
 export default configUrl;
